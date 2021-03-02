@@ -1,0 +1,68 @@
+.LoginBoxContainer {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    column-gap: 7.5rem;
+    background-color: #5965E0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.background {
+    display: flex;
+    max-height: 100vh;
+}
+
+.login{
+    margin-right: 16.25rem;
+    background: transparent;
+}
+
+.logo {
+    margin-bottom: 6rem;
+}
+
+.welcome {
+    color: white;
+}
+
+.info {
+    margin-bottom: 2.5rem;
+}
+.loginInput {
+    display: flex;
+    align-items: center;
+}
+
+.loginInput > input{
+    width: 21.25rem;
+    height: 5rem;
+    border: none;
+    background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+    border-radius: 5px 0px 0px 5px;
+    color: #B2B9FF;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.loginInput > input::placeholder{
+    margin-left: -50px;
+    color: #B2B9FF;
+}
+.loginInput > button {
+    border: 0;
+    border:none;
+    background: none;
+}
+
+.approved {
+    background-color: #4CD62B;
+}
+
+.loginInput > img{
+    transition: ease-in-out 0.2s;
+}

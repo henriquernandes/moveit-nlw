@@ -8,15 +8,19 @@ import { GetServerSideProps } from 'next'
 import { ChallengeBox } from "../components/ChallengeBox";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
+import { LoginPage } from '../components/LoginPage';
+
 
 
 interface HomeProps {
     level: number;
     currentExperience: number;
     challengesCompleted: number;
+    hasAccount: string;
 }
 export default function Home(props: HomeProps) {
   return ( 
+    <LoginPage username={props.hasAccount}>
     <ChallengesProvider 
     level={props.level} 
     currentExperience= {props.currentExperience}
@@ -42,6 +46,8 @@ export default function Home(props: HomeProps) {
     </CountdownProvider>
     </div>
     </ChallengesProvider>
+          
+    </LoginPage>
   )
 }
 
